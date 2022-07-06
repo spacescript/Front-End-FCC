@@ -1,21 +1,20 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
+  const [quote, setQuote] = useState("It is never too late to be what you might have been.")
+
+  const author = "George Eliot"
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to test.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div id="quote-box" >
+          <p>
+            "{quote}"
+          </p>
+          <p>- {author}</p>
+          <button onClick={() => setQuote("Dream big and dare to fail.")} >Change Quote</button>
+        </div>
       </header>
     </div>
   );

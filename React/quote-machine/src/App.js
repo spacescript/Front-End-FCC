@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div id="quote-box" >
-          <p>Random Number: </p>
+          <h1>Random Number: </h1>
           <button onClick={()=> setRandomInteger(Math.floor(Math.random() * 3))} >Random Number: {randomInteger}</button>
           <p>
             "{quote}"

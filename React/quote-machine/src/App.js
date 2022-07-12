@@ -21,8 +21,8 @@ function App() {
   }
 
   useEffect(() => {
-    fetchQuotes(quoteDataBaseURL);
-  }, [quoteDataBaseURL])
+    fetchQuotes(quoteDataBaseURL); //eslint-disable-next-line
+  }, [quoteDataBaseURL]) 
   
 
   const newNumber = () => {
@@ -43,11 +43,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div id="quote-box">
-          <p>
+          <p id="text">
             "{quote}"
           </p>
-          <p>- {author}</p>
-          <button onClick={fullQuoteUpdate} >New Quote</button>
+          <p id="author">- {author}</p>
+          <button id="new-quote" onClick={fullQuoteUpdate} >New Quote</button>
         </div>
       </header>
     </div>

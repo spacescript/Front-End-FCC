@@ -48,6 +48,7 @@ function App() {
           </p>
           <p id="author">- {author}</p>
           <button id="new-quote" onClick={fullQuoteUpdate} >New Quote</button>
+          <a id="tweet-quote" href="twitter.com/intent/tweet">Tweet</a>
         </div>
       </header>
     </div>

@@ -51,7 +51,7 @@ function App() {
           </p>
           <p id="author">- {author}</p>
           <div className="tweet-button">
-            <a id="tweet-quote" style={{backgroundColor: accentColor}} href={encodeURI('http://www.twitter.com/intent/tweet?text=${quote} -${author}')}target="_blank" rel="noreferrer">Tweet</a>
+            <a id="tweet-quote" style={{backgroundColor: accentColor}} href={encodeURI('http://www.twitter.com/intent/tweet?text=${quote} -${author}')}target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a>
           </div>
           <button id="new-quote" style={{backgroundColor: accentColor}} onClick={fullQuoteUpdate} >New Quote</button>
         </div>

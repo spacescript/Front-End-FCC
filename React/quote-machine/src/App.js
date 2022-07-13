@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header" style={{backgroundColor:accentColor, color:accentColor}}>
+      <header className="App-header" style={{backgroundColor:accentColor}}>
         <div id="quote-box" style={{color:accentColor}}>
           <p id="text">
             "{quote}"
